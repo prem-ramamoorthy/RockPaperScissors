@@ -26,7 +26,7 @@ A **web-based Rock Paper Scissors game** built with plain **HTML**, **CSS**, and
 
 ## 📸 Screenshots
 
-> *(![Screenshot of gameplay](output.png))*
+> *![Screenshot of gameplay](/output.jpg)*
 
 ## 📚 Why This Project?
 

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px;
+    font-size: 3rem;
+    border: black solid 2px ;
+    background-color:aquamarine;
+    height: 120px;
+    outline: 2px solid rgb(2, 46, 61);
+    outline-offset: 2px;
+    width: 120px;
+    border-radius: 60px;
+    margin: 4%;
+    margin-left: 8%;
+    
+}
+.container{
+    border : 5px solid black ;
+    margin: 10%;
+    background-color: bisque;
+}
+body{
+    background-color: azure;
+}
+.innerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin : 20px ;
+    font-size: 1.5rem;
+    white-space: nowrap ;
+}
+
+.result-emoji{
+    padding: 10px;
+    font-size: 3rem;
+    border: black solid 2px ;
+    background-color:aquamarine;
+    outline-offset: 2px;
+    border-radius: 50%;
+    display: inline;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin-top: 10px;
+}

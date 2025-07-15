@@ -9,7 +9,7 @@ A **web-based Rock Paper Scissors game** built with plain **HTML**, **CSS**, and
 - **Live score tracking**
 - **Fast and intuitive**: No frameworks, only essential, clean code
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose                               |
 |------------|---------------------------------------|
@@ -17,18 +17,18 @@ A **web-based Rock Paper Scissors game** built with plain **HTML**, **CSS**, and
 | **CSS**    | Styling and responsive layout         |
 | **JavaScript** | Game logic, user interaction, and scoring |
 
-## 🎮 How to Play
+## How to Play
 
 - Click **Rock**, **Paper**, or **Scissors** to make your move.
 - The computer selects randomly.
 - The winner for each round and updated scores appear instantly.
 - Try to outscore the computer!
 
-## 📸 Screenshots
+## Screenshots
 
 > *(![Screenshot of gameplay](output.png))*
 
-## 📚 Why This Project?
+## Why This Project?
 
 - Demonstrates **efficient use of HTML/CSS/JS** for an interactive web game.
 - All logic implemented without any libraries or frameworks.

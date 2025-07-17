@@ -14,6 +14,23 @@ function ComputerPrediction() {
     }
 }
 
+document.querySelector('.First').addEventListener('click' , () => { playgame('Rock') ;} ) ;
+document.querySelector('.Second').addEventListener('click' , () => { playgame('Paper') ;} ) ;
+document.querySelector('.Third').addEventListener('click' , () => { playgame('Scissors') ;} ) ;
+document.querySelector('.reset').addEventListener('click' , () => { resetScore() ;} ) ;
+document.querySelector('.autoplay').addEventListener('click' , () => {  autoplay()  ;} ) ;
+document.body.addEventListener('keydown' , (event) => { 
+    if(event.key === 'r'){
+         playgame('Rock') ;
+    } 
+    else if(event.key === 'p'){
+         playgame('Paper') ;
+    } 
+    else if(event.key === 's'){
+         playgame('Scissors') ;
+    }
+} ) ;
+
 function updater(result , playermove , computermove , score){
     document.querySelector('.Result').innerHTML = `Result : <p class="result-emoji">${result}</p> ` ;
     document.querySelector('.score').innerHTML = `Total wins : ${score.win} , Total Lose : ${score.lose} , Total Ties : ${score.tie} ` ;

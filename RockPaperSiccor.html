@@ -4,20 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Siccors Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="container">
-        <button onclick="playgame('Rock')" class = "First">✊</button>
-        <button onclick="playgame('Paper')" class = "Second">🖐️</button>
-        <button onclick="playgame('Scissors')" class = "Third">✌️</button>
-        <button onclick="resetScore()">🔄️</button>
+        <button class = "First">✊</button>
+        <button class = "Second">🖐️</button>
+        <button class = "Third">✌️</button>
+        <button class = "reset">🔄️</button>
         <div class="innerSection">
             <p class = "Result">Result : ____</p>
             <p class = "Moves">Your Move : ______  , computer move : _______</p>
             <p class = "score">Total wins : __ , Total Lose : __ , Total Ties : __ </p>
-            <button class = "autoplay" onclick=" autoplay() ">Auto Play</button>
+            <button class = "autoplay" >Auto Play</button>
         </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 

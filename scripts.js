@@ -2,6 +2,7 @@ let score = JSON.parse(localStorage.getItem('score'));
 if(score === null ){
     score = {win : 0 , lose : 0 , tie : 0 } ;
 }
+
 function ComputerPrediction() {
     const ComputerNo = Math.random();
     if (ComputerNo <= 1 / 3 && ComputerNo > 0) {
@@ -12,6 +13,7 @@ function ComputerPrediction() {
         return 'Scissors';
     }
 }
+
 function updater(result , playermove , computermove , score){
     document.querySelector('.Result').innerHTML = `Result : <p class="result-emoji">${result}</p> ` ;
     document.querySelector('.score').innerHTML = `Total wins : ${score.win} , Total Lose : ${score.lose} , Total Ties : ${score.tie} ` ;
@@ -65,4 +67,21 @@ function resetScore() {
     document.querySelector('.Moves').innerHTML = `Your Move : ______  , computer move : _______` ;
     document.querySelector('.score').innerHTML = `Total wins : __ , Total Lose : __ , Total Ties : __` ;
     document.querySelector('.Result').innerHTML = `Result : ____ ` ;
+}
+
+let isauto = false ;
+let IntervalId  ; 
+
+function autoplay() {
+    if(!isauto){
+        IntervalId = setInterval(function(){
+            playgame(ComputerPrediction())
+        } , 1000) ;
+        isauto = true ;
+    }
+    else{
+        clearInterval(IntervalId) ;
+        isauto = false ;
+    }
+    
 }
